@@ -12,11 +12,9 @@ const updateClock = () => {
   if (hour > 12) {
     hour = hour - 12;
     ampm = "PM";
+  } else if(hour == 12) {
+    ampm = "PM"
   }
-
-  //   hour = hour < 10 ? "0" + hour : hour;
-  //   minutes = minutes < 10 ? "0" + minutes :minutes;
-  //   seconds = seconds < 10 ? "0" + seconds : seconds;
 
   hourEl.innerText = hour < 10 ? "0" + hour : hour;
   minuteEl.innerText = minutes < 10 ? "0" + minutes : minutes;
