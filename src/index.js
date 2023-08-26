@@ -1,16 +1,33 @@
 import React from "react";
-import { ReactDOM } from "react";
 import {createRoot} from "react-dom/client"
-import App from "./components/App";
+import { StrictMode } from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import DashBoard from "./routes/Dashboard";
+import Create from "./routes/CreateCountDown";
+import Pages from "./routes/Pages";
 
-const hourEl = document.getElementById("hour");
-const minuteEl = document.getElementById("minutes");
-const secondEl = document.getElementById("seconds");
-const ampmEl = document.getElementById("ampm");
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <DashBoard/>,
+    children: [
+      {
+        path: "create/",
+        element: <Create/>
+      },
+      {
+        path: "pages/",
+        element: <Pages/>
+      },
+    ]
+  }
+])
 
 const root = createRoot(document.getElementById("root"));
 root.render(
-  <App/>
+  <StrictMode>
+<RouterProvider router={router} />
+  </StrictMode>
 )
 
 
