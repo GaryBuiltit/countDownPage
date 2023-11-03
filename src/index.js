@@ -26,7 +26,7 @@ const router = createBrowserRouter([
 const root = createRoot(document.getElementById("root"));
 root.render(
   <StrictMode>
-<RouterProvider router={router} />
+<RouterProvider router={router} history="hashHistory" />
   </StrictMode>
 )
 
