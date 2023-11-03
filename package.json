@@ -1,14 +1,15 @@
 {
-  "homepage": "https://garybuiltit.github.io/countDownPage/",
-  "name": "digital_clock",
+  "name": "countdown-page",
   "version": "1.0.0",
-  "description": "click here to seeit live https://garybuiltit.github.io/Digital_clock/",
+  "homepage": "https://garybuiltit.github.io/countDownPage/",
+  "description": "click here to seeit live https://garybuiltit.github.io/countDownPage/",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run  build",
     "deploy": "gh-pages -d src"
   },
   "keywords": [],

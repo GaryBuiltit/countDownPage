@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/countDownPage/static/css/main.9379c678.css",
+    "main.js": "/countDownPage/static/js/main.db050b18.js",
+    "index.html": "/countDownPage/index.html",
+    "main.9379c678.css.map": "/countDownPage/static/css/main.9379c678.css.map",
+    "main.db050b18.js.map": "/countDownPage/static/js/main.db050b18.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9379c678.css",
+    "static/js/main.db050b18.js"
+  ]
+}
