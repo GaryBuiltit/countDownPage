@@ -1,7 +1,7 @@
 {
   "name": "countdown-page",
   "version": "1.0.0",
-  "homepage": "https://garybuiltit.github.io/countDownPage/",
+  "homepage": "https://garybuiltit.github.io/countDownPage",
   "description": "click here to seeit live https://garybuiltit.github.io/countDownPage/",
   "main": "index.js",
   "scripts": {
